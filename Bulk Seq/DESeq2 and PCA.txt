@@ -29,6 +29,6 @@ plotPCA(rna_Rlog)
 
 counts_dds <- counts(rna_dds, normalized=TRUE)
 
-WT_OMinusP <- results(rna_dds, c("condition", "IEL", "LP"))
+IELMinusLP <- results(rna_dds, c("condition", "IEL", "LP"))
 
-write.csv(WT_OMinusP, file="DESeq2_IELMinusLP_all.csv")
+write.csv(IELMinusLP, file="DESeq2_IELMinusLP_all.csv")
